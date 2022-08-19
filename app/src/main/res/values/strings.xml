@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">The Log</string>
+    <string name="by_name">Ygor Doring - Software Engineer Android</string>
+    <string name="label_name">Nome</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_password">Senha</string>
+    <string name="login_title">Crie ou acesse sua conta</string>
+    <string name="home_contributions_title">Contribuições</string>
+    <string name="news_title">Novidades</string>
+
+    <string name="btn_login">Entrar</string>
+    <string name="btn_sing_up">Criar uma conta</string>
+    <string name="btn_create_account">Cadastrar</string>
+    <string name="btn_publish">Publicar</string>
+    <string name="btn_new_post">Nova postagem</string>
+    <string name="btn_delete">Excluir</string>
+    <string name="btn_cancel">Cancelar</string>
+
+    <string name="action_news">Novidades</string>
+    <string name="action_logout">Sair</string>
+
+    <!-- region SIGN-UP -->
+    <string name="sign_up_title">Criar conta</string>
+    <string name="sign_up_message_success">Conta criada com sucesso!</string>
+    <string name="sign_up_error_name">Digite o nome. Mínimo 3 letras</string>
+    <string name="sign_up_error_email">Digite um e-mail válido</string>
+    <string name="sign_up_error_password">Digite sua senha. Mínimo 3 letras</string>
+
+    <!-- region LOGIN -->
+    <string name="login_error_email">Digite seu e-mail</string>
+    <string name="login_error_password">Digite sua senha</string>
+    <string name="login_error_message">E-mail ou senha incorretos</string>
+
+    <!-- region POST -->
+    <string name="post_new_title">Nova postagem</string>
+    <string name="post_update_title">Editar postagem</string>
+    <string name="post_confirm_delete">Deseja realmente excluir esta postagem?</string>
+    <string name="post_message_success">Post publicado com sucesso!</string>
+    <string name="post_error_content">Digite seu texto. Mínimo 2 letras</string>
+
+</resources>

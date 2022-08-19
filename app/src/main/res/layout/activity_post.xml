@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_24"
+        tools:context="dev.ygordoring.chat.thelog.presentation.view.activity.MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintEnabled="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleTint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyExtraLight"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textPersonName|textMultiLine|textCapSentences"
+                android:lines="10"
+                android:maxLength="280"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/font_16" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:gravity="end"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPost"
+            tools:text="0/280" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_60"
+            android:layout_marginTop="@dimen/spacing_12"
+            android:shadowColor="@color/white"
+            android:text="@string/btn_publish"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:elevation="@dimen/spacing_4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_2">2dp</dimen>
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_6">6dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_36">36dp</dimen>
+    <dimen name="spacing_42">42dp</dimen>
+    <dimen name="spacing_48">48dp</dimen>
+    <dimen name="spacing_54">54dp</dimen>
+    <dimen name="spacing_60">60dp</dimen>
+    <dimen name="spacing_72">72dp</dimen>
+
+    <dimen name="icon_16">16dp</dimen>
+    <dimen name="icon_20">20dp</dimen>
+    <dimen name="icon_24">24dp</dimen>
+    <dimen name="icon_32">32dp</dimen>
+    <dimen name="icon_36">36dp</dimen>
+    <dimen name="icon_42">42dp</dimen>
+    <dimen name="icon_48">48dp</dimen>
+    <dimen name="icon_54">54dp</dimen>
+    <dimen name="icon_72">72dp</dimen>
+    <dimen name="icon_96">96dp</dimen>
+    <dimen name="icon_144">144dp</dimen>
+
+    <dimen name="button_height">54dp</dimen>
+    <dimen name="button_small">40dp</dimen>
+
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+</resources>

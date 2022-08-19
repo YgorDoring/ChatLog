@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/spacing_16"
+    android:paddingTop="@dimen/spacing_16"
+    android:paddingEnd="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageViewAvatar"
+            android:layout_width="@dimen/spacing_42"
+            android:layout_height="@dimen/spacing_42"
+            android:src="@drawable/avatar"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:id="@+id/textViewUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:layout_toStartOf="@+id/imageViewEdit"
+            android:layout_toEndOf="@+id/circleImageViewAvatar"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/font_13"
+            tools:text="User" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUser"
+            android:layout_alignStart="@+id/textViewUser"
+            android:layout_alignEnd="@+id/textViewUser"
+            android:textSize="@dimen/font_12"
+            tools:text="11/11/2021 11:11" />
+
+        <ImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="@dimen/spacing_36"
+            android:layout_height="@dimen/spacing_36"
+            android:layout_marginEnd="@dimen/spacing_4"
+            android:layout_toStartOf="@+id/imageViewDelete"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:padding="@dimen/spacing_6"
+            android:src="@drawable/ic_pencil_outline" />
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="@dimen/spacing_36"
+            android:layout_height="@dimen/spacing_36"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/spacing_12"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:padding="@dimen/spacing_6"
+            android:src="@drawable/ic_delete_outline" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDate"
+            android:layout_alignStart="@+id/textViewDate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/font_16"
+            tools:text="News content" />
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/textViewContent"
+            android:layout_alignStart="@+id/textViewContent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="@dimen/spacing_6"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/spacing_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageAvatar"
+                android:layout_width="@dimen/spacing_54"
+                android:layout_height="@dimen/spacing_54"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/spacing_12"
+                android:src="@drawable/ic_account_circle_outline" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/circleImageAvatar"
+                android:textSize="@dimen/font_14"
+                tools:text="11/11/2021 11:11" />
+
+            <TextView
+                android:id="@+id/textViewNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewDate"
+                android:layout_marginTop="@dimen/spacing_2"
+                android:layout_toEndOf="@+id/circleImageAvatar"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_16"
+                tools:text="News content" />
+
+            <TextView
+                android:id="@+id/textViewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNews"
+                android:layout_marginTop="@dimen/spacing_2"
+                android:layout_toEndOf="@+id/circleImageAvatar"
+                android:textColor="@color/colorAccent"
+                tools:text="User" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
