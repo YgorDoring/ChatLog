@@ -16,5 +16,5 @@ Projeto consiste em um app que permite o usuário "postar" uma mensagem dentro d
 
 <hr>
 <p align="right">
-<b>Feito em Fevereiro/2022 </b>
+<b>Iniciado em Fevereiro/2022 </b>
 </p>
